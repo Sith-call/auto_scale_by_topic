@@ -1,0 +1,75 @@
+📍 Consumer consumer-0 (번호: 0) 담당 라우팅키: [0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z]
+✅ Consumer consumer-0가 라우팅키 '0'에 바인딩됨 (큐: queue_consumer-0_0)
+✅ Consumer consumer-0가 라우팅키 '1'에 바인딩됨 (큐: queue_consumer-0_1)
+✅ Consumer consumer-0가 라우팅키 '2'에 바인딩됨 (큐: queue_consumer-0_2)
+✅ Consumer consumer-0가 라우팅키 '3'에 바인딩됨 (큐: queue_consumer-0_3)
+✅ Consumer consumer-0가 라우팅키 '4'에 바인딩됨 (큐: queue_consumer-0_4)
+✅ Consumer consumer-0가 라우팅키 '5'에 바인딩됨 (큐: queue_consumer-0_5)
+✅ Consumer consumer-0가 라우팅키 '6'에 바인딩됨 (큐: queue_consumer-0_6)
+✅ Consumer consumer-0가 라우팅키 '7'에 바인딩됨 (큐: queue_consumer-0_7)
+✅ Consumer consumer-0가 라우팅키 '8'에 바인딩됨 (큐: queue_consumer-0_8)
+✅ Consumer consumer-0가 라우팅키 '9'에 바인딩됨 (큐: queue_consumer-0_9)
+✅ Consumer consumer-0가 라우팅키 'a'에 바인딩됨 (큐: queue_consumer-0_a)
+✅ Consumer consumer-0가 라우팅키 'b'에 바인딩됨 (큐: queue_consumer-0_b)
+✅ Consumer consumer-0가 라우팅키 'c'에 바인딩됨 (큐: queue_consumer-0_c)
+✅ Consumer consumer-0가 라우팅키 'd'에 바인딩됨 (큐: queue_consumer-0_d)
+✅ Consumer consumer-0가 라우팅키 'e'에 바인딩됨 (큐: queue_consumer-0_e)
+✅ Consumer consumer-0가 라우팅키 'f'에 바인딩됨 (큐: queue_consumer-0_f)
+✅ Consumer consumer-0가 라우팅키 'g'에 바인딩됨 (큐: queue_consumer-0_g)
+✅ Consumer consumer-0가 라우팅키 'h'에 바인딩됨 (큐: queue_consumer-0_h)
+✅ Consumer consumer-0가 라우팅키 'i'에 바인딩됨 (큐: queue_consumer-0_i)
+✅ Consumer consumer-0가 라우팅키 'j'에 바인딩됨 (큐: queue_consumer-0_j)
+✅ Consumer consumer-0가 라우팅키 'k'에 바인딩됨 (큐: queue_consumer-0_k)
+✅ Consumer consumer-0가 라우팅키 'l'에 바인딩됨 (큐: queue_consumer-0_l)
+✅ Consumer consumer-0가 라우팅키 'm'에 바인딩됨 (큐: queue_consumer-0_m)
+✅ Consumer consumer-0가 라우팅키 'n'에 바인딩됨 (큐: queue_consumer-0_n)
+✅ Consumer consumer-0가 라우팅키 'o'에 바인딩됨 (큐: queue_consumer-0_o)
+✅ Consumer consumer-0가 라우팅키 'p'에 바인딩됨 (큐: queue_consumer-0_p)
+✅ Consumer consumer-0가 라우팅키 'q'에 바인딩됨 (큐: queue_consumer-0_q)
+✅ Consumer consumer-0가 라우팅키 'r'에 바인딩됨 (큐: queue_consumer-0_r)
+✅ Consumer consumer-0가 라우팅키 's'에 바인딩됨 (큐: queue_consumer-0_s)
+✅ Consumer consumer-0가 라우팅키 't'에 바인딩됨 (큐: queue_consumer-0_t)
+✅ Consumer consumer-0가 라우팅키 'u'에 바인딩됨 (큐: queue_consumer-0_u)
+✅ Consumer consumer-0가 라우팅키 'v'에 바인딩됨 (큐: queue_consumer-0_v)
+✅ Consumer consumer-0가 라우팅키 'w'에 바인딩됨 (큐: queue_consumer-0_w)
+✅ Consumer consumer-0가 라우팅키 'x'에 바인딩됨 (큐: queue_consumer-0_x)
+✅ Consumer consumer-0가 라우팅키 'y'에 바인딩됨 (큐: queue_consumer-0_y)
+✅ Consumer consumer-0가 라우팅키 'z'에 바인딩됨 (큐: queue_consumer-0_z)
+✅ Consumer consumer-0 초기화 완료 (총 1개 Consumer 중)
+🚀 Consumer consumer-0 메시지 처리 시작
+📥 메시지 수신됨 [consumer-0]: ID=6wg1itej, Priority=2 (큐: queue_consumer-0_6)
+🔄 [consumer-0] 메시지 처리됨 - 시각: 2025-06-11 22:31:25, ID: 6wg1itej, 우선순위: 2
+📥 메시지 수신됨 [consumer-0]: ID=zp1j73c0, Priority=8 (큐: queue_consumer-0_z)
+🔄 [consumer-0] 메시지 처리됨 - 시각: 2025-06-11 22:31:27, ID: zp1j73c0, 우선순위: 8
+📥 메시지 수신됨 [consumer-0]: ID=7p32556l, Priority=8 (큐: queue_consumer-0_7)
+📥 메시지 수신됨 [consumer-0]: ID=ignyjvi8, Priority=4 (큐: queue_consumer-0_i)
+🔄 [consumer-0] 메시지 처리됨 - 시각: 2025-06-11 22:31:28, ID: 7p32556l, 우선순위: 8
+📥 메시지 수신됨 [consumer-0]: ID=yp2qsgvy, Priority=7 (큐: queue_consumer-0_y)
+📥 메시지 수신됨 [consumer-0]: ID=goersaos, Priority=3 (큐: queue_consumer-0_g)
+🔄 [consumer-0] 메시지 처리됨 - 시각: 2025-06-11 22:31:29, ID: yp2qsgvy, 우선순위: 7
+📥 메시지 수신됨 [consumer-0]: ID=1iht6737, Priority=1 (큐: queue_consumer-0_1)
+📥 메시지 수신됨 [consumer-0]: ID=0l7o9jc8, Priority=9 (큐: queue_consumer-0_0)
+🔄 [consumer-0] 메시지 처리됨 - 시각: 2025-06-11 22:31:30, ID: 0l7o9jc8, 우선순위: 9
+📥 메시지 수신됨 [consumer-0]: ID=f3d0nrtm, Priority=1 (큐: queue_consumer-0_f)
+📥 메시지 수신됨 [consumer-0]: ID=e4jtzhen, Priority=1 (큐: queue_consumer-0_e)
+🔄 [consumer-0] 메시지 처리됨 - 시각: 2025-06-11 22:31:31, ID: ignyjvi8, 우선순위: 4
+📥 메시지 수신됨 [consumer-0]: ID=cwt6iuf8, Priority=3 (큐: queue_consumer-0_c)
+📥 메시지 수신됨 [consumer-0]: ID=xjhh2udo, Priority=5 (큐: queue_consumer-0_x)
+🔄 [consumer-0] 메시지 처리됨 - 시각: 2025-06-11 22:31:32, ID: xjhh2udo, 우선순위: 5
+🔄 [consumer-0] 메시지 처리됨 - 시각: 2025-06-11 22:31:33, ID: cwt6iuf8, 우선순위: 3
+📥 메시지 수신됨 [consumer-0]: ID=56iped03, Priority=8 (큐: queue_consumer-0_5)
+📥 메시지 수신됨 [consumer-0]: ID=oylsunoq, Priority=3 (큐: queue_consumer-0_o)
+📥 메시지 수신됨 [consumer-0]: ID=mzx6lwd6, Priority=1 (큐: queue_consumer-0_m)
+🔄 [consumer-0] 메시지 처리됨 - 시각: 2025-06-11 22:31:34, ID: 56iped03, 우선순위: 8
+📥 메시지 수신됨 [consumer-0]: ID=z9dq93sb, Priority=4 (큐: queue_consumer-0_z)
+🔄 [consumer-0] 메시지 처리됨 - 시각: 2025-06-11 22:31:35, ID: z9dq93sb, 우선순위: 4
+📥 메시지 수신됨 [consumer-0]: ID=cnyg634n, Priority=2 (큐: queue_consumer-0_c)
+📥 메시지 수신됨 [consumer-0]: ID=f10qqy4z, Priority=10 (큐: queue_consumer-0_f)
+🔄 [consumer-0] 메시지 처리됨 - 시각: 2025-06-11 22:31:36, ID: f10qqy4z, 우선순위: 10
+🔄 [consumer-0] 메시지 처리됨 - 시각: 2025-06-11 22:31:37, ID: oylsunoq, 우선순위: 3
+🔄 [consumer-0] 메시지 처리됨 - 시각: 2025-06-11 22:31:38, ID: goersaos, 우선순위: 3
+🔄 [consumer-0] 메시지 처리됨 - 시각: 2025-06-11 22:31:39, ID: cnyg634n, 우선순위: 2
+🔄 [consumer-0] 메시지 처리됨 - 시각: 2025-06-11 22:31:40, ID: 1iht6737, 우선순위: 1
+🔄 [consumer-0] 메시지 처리됨 - 시각: 2025-06-11 22:31:41, ID: mzx6lwd6, 우선순위: 1
+🔄 [consumer-0] 메시지 처리됨 - 시각: 2025-06-11 22:31:42, ID: e4jtzhen, 우선순위: 1
+🔄 [consumer-0] 메시지 처리됨 - 시각: 2025-06-11 22:31:43, ID: f3d0nrtm, 우선순위: 1
