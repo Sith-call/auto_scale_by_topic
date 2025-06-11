@@ -45,7 +45,7 @@ metadata:
     app: message-consumer
 spec:
   serviceName: message-consumer
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: message-consumer
@@ -67,7 +67,7 @@ spec:
             fieldRef:
               fieldPath: metadata.name
         - name: TOTAL_CONSUMERS
-          value: "1"
+          value: "3"
         resources:
           requests:
             memory: "128Mi"
