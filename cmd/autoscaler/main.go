@@ -96,7 +96,7 @@ func (as *AutoScaler) getQueueMetrics() (int, error) {
 	chars := "abcdefghijklmnopqrstuvwxyz0123456789"
 	
 	for i := 0; i < int(as.currentReplicas); i++ {
-		consumerID := fmt.Sprintf("consumer-%d", i)
+		consumerID := fmt.Sprintf("message-consumer-%d", i)
 		
 		// 각 Consumer가 담당하는 라우팅키 계산
 		charsPerConsumer := len(chars) / int(as.currentReplicas)

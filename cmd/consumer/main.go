@@ -239,8 +239,8 @@ func (c *Consumer) startConsuming() {
 		}(queueName, msgs)
 	}
 
-	// 1초마다 가장 높은 우선순위 메시지 처리
-	ticker := time.NewTicker(time.Second)
+	// 3초마다 가장 높은 우선순위 메시지 처리
+	ticker := time.NewTicker(3 * time.Second)
 	defer ticker.Stop()
 
 	fmt.Printf("🚀 Consumer %s 메시지 처리 시작\n", c.consumerID)

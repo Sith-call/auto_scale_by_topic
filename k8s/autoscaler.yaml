@@ -48,8 +48,8 @@ spec:
       serviceAccountName: autoscaler
       containers:
       - name: autoscaler
-        image: message-autoscaler:latest
-        imagePullPolicy: IfNotPresent
+        image: localhost:5000/message-autoscaler:latest
+        imagePullPolicy: Never
         env:
         - name: RABBITMQ_URL
           value: "amqp://guest:guest@rabbitmq:5672/"

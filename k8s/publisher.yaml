@@ -13,13 +13,13 @@ spec:
       restartPolicy: OnFailure
       containers:
       - name: publisher
-        image: message-publisher:latest
-        imagePullPolicy: IfNotPresent
+        image: localhost:5000/message-publisher:latest
+        imagePullPolicy: Never
         env:
         - name: RABBITMQ_URL
           value: "amqp://guest:guest@rabbitmq:5672/"
         - name: MESSAGES_PER_SECOND
-          value: "20"
+          value: "100"
         - name: DURATION_SECONDS
           value: "120"
         resources:
@@ -49,8 +49,8 @@ spec:
     spec:
       containers:
       - name: publisher
-        image: message-publisher:latest
-        imagePullPolicy: IfNotPresent
+        image: localhost:5000/message-publisher:latest
+        imagePullPolicy: Never
         env:
         - name: RABBITMQ_URL
           value: "amqp://guest:guest@rabbitmq:5672/"

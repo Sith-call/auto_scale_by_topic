@@ -57,8 +57,8 @@ spec:
       serviceAccountName: message-consumer
       containers:
       - name: consumer
-        image: message-consumer:latest
-        imagePullPolicy: IfNotPresent
+        image: localhost:5000/message-consumer:latest
+        imagePullPolicy: Never
         env:
         - name: RABBITMQ_URL
           value: "amqp://guest:guest@rabbitmq:5672/"
