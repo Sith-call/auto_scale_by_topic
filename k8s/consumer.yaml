@@ -57,7 +57,7 @@ spec:
       serviceAccountName: message-consumer
       containers:
       - name: consumer
-        image: localhost:5000/message-consumer:latest
+        image: message-consumer:latest
         imagePullPolicy: Never
         env:
         - name: RABBITMQ_URL

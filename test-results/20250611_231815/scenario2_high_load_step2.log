@@ -1,0 +1,71 @@
+⏰ Wed Jun 11 23:20:56 KST 2025
+시나리오: scenario2_high_load - 단계 2
+=================================
+📊 StatefulSet 상태:
+NAME               DESIRED   CURRENT   READY
+message-consumer   10        1         <none>
+
+🎯 Consumer Pods:
+NAME                 READY   STATUS             RESTARTS      AGE
+message-consumer-0   0/1     CrashLoopBackOff   7 (33s ago)   29m
+
+📬 RabbitMQ 큐 상태:
+Timeout: 10.0 seconds ...
+Listing queues for vhost / ...
+name	messages	consumers
+queue_message-consumer-2_g	525	0
+queue_message-consumer-0_w	441	0
+queue_message-consumer-0_j	101	0
+queue_message-consumer-0_r	427	0
+queue_message-consumer-0_q	408	0
+queue_message-consumer-0_n	94	0
+queue_message-consumer-0_4	84	0
+queue_message-consumer-0_z	414	0
+queue_message-consumer-0_g	94	0
+queue_message-consumer-0_f	97	0
+queue_message-consumer-1_d	528	0
+queue_message-consumer-0_u	410	0
+queue_message-consumer-0_9	108	0
+queue_message-consumer-0_y	430	0
+queue_message-consumer-0_x	411	0
+queue_message-consumer-0_p	212	0
+queue_message-consumer-2_i	513	0
+queue_message-consumer-0_l	89	0
+queue_message-consumer-0_c	111	0
+queue_message-consumer-0_s	434	0
+queue_message-consumer-0_v	375	0
+queue_message-consumer-0_6	99	0
+queue_message-consumer-0_1	89	0
+queue_message-consumer-0_i	105	0
+queue_message-consumer-0_2	90	0
+queue_message-consumer-1_f	525	0
+queue_message-consumer-0_8	100	0
+queue_message-consumer-0_k	97	0
+queue_message-consumer-0_t	402	0
+queue_message-consumer-0_3	95	0
+queue_message-consumer-0_a	115	0
+queue_message-consumer-0_h	100	0
+queue_message-consumer-0_b	89	0
+queue_message-consumer-2_h	468	0
+queue_message-consumer-0_e	105	0
+queue_message-consumer-0_d	115	0
+queue_message-consumer-1_e	498	0
+queue_message-consumer-0_o	100	0
+queue_message-consumer-0_m	108	0
+queue_message-consumer-0_7	116	0
+queue_message-consumer-0_0	99	0
+queue_message-consumer-0_5	96	0
+
+📈 총 메시지 수:
+총 10142개 메시지
+
+🤖 AutoScaler 로그:
+📊 현재 상태 - 큐 메시지: 2812, 현재 복제본: 10, 필요 복제본: 10
+📊 현재 상태 - 큐 메시지: 2812, 현재 복제본: 10, 필요 복제본: 10
+📊 현재 상태 - 큐 메시지: 2812, 현재 복제본: 10, 필요 복제본: 10
+📊 현재 상태 - 큐 메시지: 2487, 현재 복제본: 10, 필요 복제본: 10
+📊 현재 상태 - 큐 메시지: 3284, 현재 복제본: 10, 필요 복제본: 10
+
+📤 Publisher 상태:
+No resources found in default namespace.
+

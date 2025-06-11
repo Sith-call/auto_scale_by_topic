@@ -202,7 +202,7 @@ func (c *Consumer) setupQueues() error {
 	return nil
 }
 
-func (c *Consumer) startConsuming() {
+func (c *Consumer) consumeFromQueues() {
 	// 각 큐에서 메시지 소비 시작
 	for _, queueName := range c.currentQueues {
 		msgs, err := c.channel.Consume(
@@ -238,6 +238,11 @@ func (c *Consumer) startConsuming() {
 			}
 		}(queueName, msgs)
 	}
+}
+
+func (c *Consumer) startConsuming() {
+	// 큐에서 메시지 소비 시작
+	c.consumeFromQueues()
 
 	// 3초마다 가장 높은 우선순위 메시지 처리
 	ticker := time.NewTicker(3 * time.Second)
@@ -269,9 +274,8 @@ func (c *Consumer) startConsuming() {
 						log.Printf("❌ 큐 재설정 실패: %v", err)
 					} else {
 						fmt.Printf("✅ 파티션 재할당 완료\n")
-						// 새 큐에서 메시지 소비 시작
-						c.startConsuming()
-						return // 재귀 호출로 새로운 소비 루프 시작
+						// 새 큐에서 메시지 소비를 위해 go routine 시작
+						go c.consumeFromQueues()
 					}
 				}
 			}
