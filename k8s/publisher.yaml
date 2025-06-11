@@ -1,0 +1,67 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: message-publisher
+  labels:
+    app: message-publisher
+spec:
+  template:
+    metadata:
+      labels:
+        app: message-publisher
+    spec:
+      restartPolicy: OnFailure
+      containers:
+      - name: publisher
+        image: message-publisher:latest
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: RABBITMQ_URL
+          value: "amqp://guest:guest@rabbitmq:5672/"
+        - name: MESSAGES_PER_SECOND
+          value: "20"
+        - name: DURATION_SECONDS
+          value: "120"
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "100m"
+          limits:
+            memory: "128Mi"
+            cpu: "200m"
+---
+# Manual scaling을 위한 Deployment도 함께 제공
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: message-publisher-deployment
+  labels:
+    app: message-publisher-deployment
+spec:
+  replicas: 0  # 기본적으로 비활성화, 필요시 스케일링
+  selector:
+    matchLabels:
+      app: message-publisher-deployment
+  template:
+    metadata:
+      labels:
+        app: message-publisher-deployment
+    spec:
+      containers:
+      - name: publisher
+        image: message-publisher:latest
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: RABBITMQ_URL
+          value: "amqp://guest:guest@rabbitmq:5672/"
+        - name: MESSAGES_PER_SECOND
+          value: "10"
+        - name: DURATION_SECONDS
+          value: "3600"  # 1시간 동안 실행
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "100m"
+          limits:
+            memory: "128Mi"
+            cpu: "200m" 
